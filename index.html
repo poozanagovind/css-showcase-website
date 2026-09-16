@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Studio</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f7f5ff;
+            color: #222;
+        }
+
+        /* Navigation */
+
+        nav {
+            width: 100%;
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #6c4ce6;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 15px;
+        }
+
+        nav ul li a:hover {
+            color: #6c4ce6;
+        }
+
+        /* Hero */
+
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 8%;
+            background: linear-gradient(135deg, #eee9ff, #ffffff);
+        }
+
+        .hero-text {
+            max-width: 550px;
+        }
+
+        .hero-text p {
+            color: #6c4ce6;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .hero-text h1 {
+            font-size: 60px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .hero-text h1 span {
+            color: #6c4ce6;
+        }
+
+        .hero-text .description {
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            background: #6c4ce6;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #4e35b5;
+            transform: translateY(-3px);
+        }
+
+        /* Design Circle */
+
+        .creative-box {
+            width: 330px;
+            height: 330px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #6c4ce6, #d946ef);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 20px 50px rgba(108, 76, 230, 0.3);
+        }
+
+        .creative-box div {
+            width: 210px;
+            height: 210px;
+            border-radius: 30px;
+            background: white;
+            transform: rotate(15deg);
+        }
+
+        /* About */
+
+        .about {
+            padding: 70px 8%;
+            text-align: center;
+            background: white;
+        }
+
+        .about h2 {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .about p {
+            max-width: 650px;
+            margin: auto;
+            color: #666;
+            line-height: 1.7;
+        }
+
+        /* Features */
+
+        .features {
+            padding: 70px 8%;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            background: #f7f5ff;
+        }
+
+        .feature {
+            background: white;
+            width: 280px;
+            padding: 35px 25px;
+            text-align: center;
+            border-radius: 18px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+        }
+
+        .feature .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .feature h3 {
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            color: #777;
+            line-height: 1.5;
+        }
+
+        /* Footer */
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #20183d;
+            color: white;
+        }
+
+        /* Responsive */
+
+        @media (max-width: 768px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                gap: 50px;
+            }
+
+            .hero-text h1 {
+                font-size: 42px;
+            }
+
+            .creative-box {
+                width: 250px;
+                height: 250px;
+            }
+
+            .creative-box div {
+                width: 160px;
+                height: 160px;
+            }
+
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+        <div class="logo">CREATIVE.</div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Services</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <p>WELCOME TO CREATIVE STUDIO</p>
+
+            <h1>
+                Ideas that<br>
+                <span>look different.</span>
+            </h1>
+
+            <div class="description">
+                We create simple, beautiful and meaningful digital
+                experiences through creativity and design.
+            </div>
+
+            <a href="#about" class="btn">
+                Explore More →
+            </a>
+
+        </div>
+
+
+        <div class="creative-box">
+            <div></div>
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+
+    <section class="about" id="about">
+
+        <h2>About Our Studio</h2>
+
+        <p>
+            Creative Studio is a space where ideas become visual
+            experiences. We believe good design should be simple,
+            attractive and easy to understand.
+        </p>
+
+    </section>
+
+
+    <!-- Features -->
+
+    <section class="features" id="features">
+
+        <div class="feature">
+
+            <div class="icon">🎨</div>
+
+            <h3>Creative Design</h3>
+
+            <p>
+                Unique and attractive designs created
+                with creativity.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="icon">💡</div>
+
+            <h3>Fresh Ideas</h3>
+
+            <p>
+                Turning simple ideas into beautiful
+                digital experiences.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="icon">✨</div>
+
+            <h3>Modern Style</h3>
+
+            <p>
+                Clean layouts with modern colors,
+                effects and typography.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+        © 2026 Creative Studio | Designed with CSS
+    </footer>
+
+</body>
+</html>
